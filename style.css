@@ -27,6 +27,8 @@ body{
   border-style: solid;
   border-radius: 2%;
   border-color: #a60314;
+  text-align: center;
+  text-color: #fff;
 
 }
 
@@ -45,7 +47,30 @@ body{
   color : #a60314;
   font-size: 50px;
   text-transform: capitalize;
+  text-shadow: -1px -1px #fff;
+  margin-bottom: 50px;
 }
+
+.loginbox input{
+  width: 50%;
+
+  margin-bottom: 60px;
+
+
+}
+
+
+
+.loginbox input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #a60314;
+  background: transparent;
+  text-align: center;
+  font-size: 25px;
+  height: 50px;
+}
+
 .credbutton{
   grid-column: 3 / span 1;
   grid-row: 3 / span 1;
