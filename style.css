@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.75),
+  rgba(0, 0, 0, 0.75)),url(fight.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-sans-serif;
+}
+
+.form-container{
+  display: grid;
+  grid-template-columns: 25px 300px 200px 300px auto;
+  grid-template-rows: 75px 1000px 100px auto;
+}
+
+.login-container{
+  display: grid;
+  grid-template-columns:
+}
+
+.loginbox{
+  grid-column: 2 / span 3;
+  grid-row: 2 / 3;
+  background: #000;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 2%;
+  border-color: #a60314;
+
+}
+
+.dice{
+  width:20%;
+  margin: auto;
+  display: block;
+  bottom: 50px;
+  transform: translateY(-70px);
+}
+#welcome{
+  margin: 0;
+  padding: 0 0 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  color : #a60314;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.credbutton{
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+
+}
+
+.credbutton ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.credbutton ul li a{
+  text-decoration: none;
+  color: #3b2a28;
+  text-transform: uppercase;
+}
+
+.credbutton ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #801205;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.credbutton ul li:hover::after{
+  width:100%;
+}
