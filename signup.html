@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Welcome to Character Generator.</title>
+        <!---
+        Add CSS later.
+        <link rel="stylesheet" type="text/css" href="a2.css"/>
+        -->
+		<script type="text/javascript" src="signup.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Welcome Adventurer!</h1>
+            <p>To use our generator and begin saving your characters, <br>
+                please sign up by filling out the information below!</p>
+        </header>
+        <form id="SignUp" method="post">
+            <table>
+                <tr> <!-- Email setup-->
+                    <td><label id="email_msg" class="err_msg"></label></td>
+                    <td align="right">Email: </td>
+                    <td align="left"><input type="email" name="su_email"/></td>
+                </tr>
+                <tr> <!-- Name setup -->
+                    <td><label id="name_msg" class="err_msg"></label></td>
+                    <td align="right">Name: </td>
+                    <td align="left"><input type="name" name="su_name"/></td>
+                </tr>
+                <tr> <!-- Password setup-->
+                    <td><label id="pwd_msg" class="err_msg"></label></td>
+                    <td align="right">Password: </td>
+                    <td align="left"><input type="password" name="su_pwd"/></td>
+                </tr>
+                <tr> <!-- Confirm password -->
+                    <td><label id="cpwd_msg" class="err_msg"></label></td>
+                    <td align="right">Confirm Password: </td>
+                    <td align="left"><input type="password" name="su_cpwd"/></td>
+                </tr>
+                <tr> <!-- Security question -->
+                    <td><label id="secq_msg" class="err_msg"></label></td>
+                    <td align="right">Security Question: </td>
+                    <td align="left"><input type="text" name="su_secq"/></td>
+                </tr>
+                <tr> <!-- Security answer-->
+                    <td><label id="seca_msg" class="err_msg"></label></td>
+                    <td align="right">Security Answer:: </td>
+                    <td align="left"><input type="text" name="su_seca"/></td>
+                </tr>
+            </table>
+            <input type="button" value="Submit" onclick="SignUpForm()"/>
+        </form>
+    </body>
+</html>
