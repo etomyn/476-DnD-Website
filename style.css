@@ -1,3 +1,5 @@
+@import "button.css";
+
 body{
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@ body{
   background-position: center;
   font-family: sans-sans-serif;
 }
+
 
 .form-container{
   display: grid;
@@ -59,8 +62,6 @@ body{
 
 }
 
-
-
 .loginbox input[type="text"], input[type="password"]
 {
   border: none;
@@ -69,6 +70,27 @@ body{
   text-align: center;
   font-size: 25px;
   height: 50px;
+}
+
+.loginbox input[value="Login"]
+{
+  border: none;
+  outline: none;
+  height: 40px;;
+  background: #a60314;
+  color: #fff;
+  font-size: 18px;
+}
+
+.loginbox input[value="Create your Account"]
+{
+  border: none;
+  outline: none;
+  height: 40px;;
+  background: #a8320a;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
 }
 
 .credbutton{
